@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,600&family=Roboto:wght@300;400&display=swap');
+
+/*
+RESPONSIVE DESIGN
+font-size: 
+        100% --> 16px(por defecto) relativo al elemento padre
+        1rem --> 16px(por defecto) relativo al tamaño de fuente del elemnto raiz
+        em --> Siempre toma el ultimo tamaño asigando(tamaño de fuente actual) y lo multiplica px*emp
+        1vmax = 1vwidth or 1vheight, será el mas grande de entre los dos relativo al padre.
+        1vmin = 1vw or 1vh, será el mas pequeño de entre los dos relativo al padre.
+    Conclusión: 
+            - Los porcentages % son utiles usarlos con imagenes(cubra el 100% del ancho de la pantalla)
+            - Los Pixeles se usarán solo para sombras y bordes
+*/
+/*
+-----------------------------Preguntas----------------------------------
+- que es mejor usar para un respondive design rem, em, %, vmax,vmin??
+
+*/
+
+
+body{
+    background-color: #204051; /*El background será Azul*/
+    color: white; /*Todas las letras serán Blancas*/
+}
+
+.Mitad1{
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+#Title{
+    position: relative;
+    width: 100%;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 1.6vw;
+    top: 20%;
+    /*grid-area: header2;*/    
+}
+#Content{
+    display: block;
+    position: absolute;
+    top: 36%;
+    font-family: 'Roboto Light', monospace,sans-serif;
+    width: 100%;
+    height: 30%;
+    font-size: 2vmax;    
+    /*grid-area: header2;*/    
+}
+#List{
+    display: block;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    font-family: 'Roboto Light', monospace,sans-serif;
+    font-size: 1.8vmax;
+    width: 95%;
+    height: 40%;
+    /*grid-area: header2;*/
+}
+#par{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#Proyectos{
+    position: absolute;
+    display: block;
+    width: 45%;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 1.8vmax;
+    top: 80%;
+}
+#Yo{
+    position: absolute;
+    display: block;
+    width: 45%;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 1.8vmax;
+    top: 80%;
+    left: 50%;
+}
+
+.Mitad2{
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+#IMGperfil{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+#Perfil{
+    width: 42%;
+    height: 55%;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+}
+#Sombra1{
+    display: block;
+    position: absolute;
+    width: 42%;
+    height: 55%;
+    top: 23%;
+    left: 35.5%;
+    background-color: #FEFEFE;
+    opacity: 0.3;
+}
+#Sombra2{
+    display: block;
+    position: absolute;
+    width: 42%;
+    height: 55%;
+    top: 26%;
+    left: 33%;
+    background-color: #FEFEFE;
+    opacity: 0.3;
+}
+
+
+/*Aun no lo he hecho*/
+#Marco{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+    border: #707070;
+    border-radius: 5%;
+}

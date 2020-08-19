@@ -1,0 +1,185 @@
+/*-------------My Projects----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400&display=swap');
+
+.Mitad1{
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+body{
+    --color2: #C23535;
+    overflow: hidden;
+}
+.Mitad2{
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 400%;
+    left: 50%;
+    color: white;
+}
+
+/*------------ Parte 1 -------------*/
+.Retro{
+    position: fixed;
+    height: 6.5%;
+    width: 4%;
+    border: 1px solid black;
+    background-color: var(--color2);
+    border-radius: 20%;
+    top: 2%;
+    left: 1%;
+}
+.Retro hr{
+    position: relative;
+    border-bottom: solid 2px black;
+    margin: 0% 0%;
+    margin-bottom: 20%;
+    padding: 0 0;
+    border-top: none;
+    width: 75%;
+    left: 12.5%;
+    top: 20%;
+}
+.Retro:hover {
+    background-color: gray;
+    border: 1px solid white;
+}
+.Retro:hover hr{
+    border-bottom: 2px solid white;
+}
+#Name{
+    position: fixed;
+    width: 94%;
+    left: 6%;
+    top: 3%;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 1.7vw;
+    color: black;
+}
+
+.sidebar {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 0.65em;
+    background-size: 100% 100%;
+    background-image: url("Recursos/0.jpg");
+    
+}
+
+.nav {
+    position: relative;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    font-family: 'Roboto Regular', sans-serif;
+    font-weight: bold;
+    --colorn: black;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin: 3.2em 0;
+}
+
+.nav ul li a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: var(--colorn);
+    opacity: .35;
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.nav ul .active a {
+    color: var(-colorn);
+    opacity: 1;
+}
+
+.nav ul :not(.active)::after {
+    opacity: 0.2;
+}
+
+nav ul :not(.active):hover a {
+    color: var(--colorn);
+    opacity: .754;
+}
+nav ul ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,var(--color2), white);
+}
+
+/*------------- Parte 2 -------------------*/
+.Parte2{
+    position: relative;
+    display: block;
+    height: 25%;
+    width: 100%;
+    background-color: var(--color2);
+}
+#Description{
+    position: fixed;
+    width: 10%;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 1.7vmax;
+    top: 2%;
+    left: 88%;
+}
+.Activities{
+    position: absolute;
+    width: 100%;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 1.5vmax;
+    text-align: center;
+    top: 20%;
+}
+.Nproyecto{
+    position: absolute;
+    width: 100%;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 3vmax;
+    top: 24%;
+    text-align: center;
+}
+hr{
+    position: absolute;
+    width: 30%;
+    height: 0%;
+    border-top: 3px solid dimgray;
+    top: 30%;
+    left: 35%;
+}
+.Parrafo{
+    position: absolute;
+    width: 80%;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 1.5vmax;
+    top: 42%;
+    left: 10%;
+    text-align: justify;
+}
+#Lgit{
+    position: absolute;
+    width: 40%;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 2.5vmax;
+    top: 80%;
+    left: 30%;
+}
+
